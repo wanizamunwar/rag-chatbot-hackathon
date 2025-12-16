@@ -1,0 +1,135 @@
+.chatContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toggleButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatWindow {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blurred background */
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.messagesDisplay {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  background-color: transparent; /* Ensure blur is visible */
+}
+
+.message {
+  padding: 8px 12px; /* Added padding for chat bubbles */
+  border-radius: 15px; /* Added border-radius for chat bubbles */
+  margin-bottom: 8px; /* Spacing between messages */
+  max-width: 75%; /* Limit message width */
+  word-wrap: break-word; /* Ensure long words break */
+  white-space: pre-wrap; /* Respect newlines in the text */
+}
+
+.sourceDocuments {
+    font-size: 0.75em;
+    color: var(--ifm-color-emphasis-600);
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.sourceDocuments ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.sourceDocuments li {
+    margin-bottom: 3px;
+}
+
+.sourceDocuments a {
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+}
+
+.sourceDocuments a:hover {
+    text-decoration: underline;
+}
+
+.user {
+  background-color: #007bff; /* Professional blue for outgoing messages */
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot {
+  background-color: #f1f0f0; /* Light gray for incoming messages */
+  color: black;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.welcomeMessage {
+    text-align: center;
+    color: var(--ifm-color-emphasis-500);
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.systemError {
+    background-color: var(--ifm-color-danger);
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 0.85em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.welcomeMessage {
+    text-align: center;
+    color: var(--ifm-color-emphasis-500);
+    margin-top: 20px;
+}
+
+.inputArea {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+.chatInput {
+  flex-grow: 1;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.sendButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}

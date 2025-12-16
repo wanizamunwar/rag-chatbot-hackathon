@@ -1,0 +1,60 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background-color: var(--ifm-background-color);
+}
+
+.featureRow {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.featureRowReversed {
+  flex-direction: row-reverse;
+}
+
+.featureContent {
+  padding: 0 2rem;
+}
+
+.featureContent h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.featureIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureIcon {
+  font-size: 8rem; /* Slightly smaller to allow scale effect */
+  padding: 2rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 2rem;
+  line-height: 1;
+  transition: transform 0.3s ease-in-out; /* Add transition for animation */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.featureIcon:hover {
+  transform: scale(1.1) rotate(5deg); /* Simple hover animation */
+}
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 996px) {
+  .featureRow {
+    flex-direction: column;
+    text-align: center;
+  }
+  .featureRowReversed {
+    flex-direction: column; /* Keep it column for mobile */
+  }
+  .featureContent {
+    margin-top: 2rem;
+  }
+}
