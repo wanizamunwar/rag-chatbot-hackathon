@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+qdrant-client
+langchain
+pypdf
+markdown
+langchain-qdrant
+langchain-text-splitters
+langchain-community
+sentence-transformers
+torch
+tf-keras
